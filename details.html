@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-image: url("./sky\ image.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* height: 500vh; */
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        table {
+            background-color: rgb(221, 215, 215);
+        }
+
+        #navbar {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 10px 10px 3px 10px;
+            position: sticky;
+            top: 0px;
+            background-color: #ffffffd5;
+            z-index: 10;
+            overflow-x: hidden;
+        }
+
+        #navbar article {
+            display: flex;
+            padding: 10px;
+            /* margin: 30px; */
+        }
+
+        #navbar article div a {
+            margin: 30px;
+            text-decoration: none;
+            align-items: center;
+            color: #25304b;
+        }
+
+        #navbar article div a i {
+            margin-left: 10px;
+        }
+
+        #navbar article img {
+            height: 31px;
+            width: 103px;
+        }
+
+        #navbar .ar3 div a i {
+            margin-left: 8px;
+        }
+
+        #navbar .ar3 div span {
+            background-color: white;
+            padding: 8px;
+            border-radius: 20px;
+        }
+
+        #navbar .ar3 div a {
+            background-color: lightgray;
+            padding: 12px 6px 12px 4px;
+            border-radius: 50px;
+        }
+
+        #navbar .ar3 {
+            margin-top: 4px;
+        }
+
+        #navbar .ar2 {
+            margin-top: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="navbar">
+        <article class="ar1">
+            <div><img src="./indigo.avif" alt=""></div>
+        </article>
+
+        <article class="ar2">
+            <div><a href="#">Book <i class="fa-solid fa-angle-down"></i></a></div>
+            <div><a href="#">Trips <i class="fa-solid fa-angle-down"></i></a></div>
+            <div><a href="#">Check In</a></div>
+            <div><a href="#">6E Rewards</a></div>
+            <div><a href="#">IndiGo BluChip <i class="fa-solid fa-angle-down"></i></a></div>
+        </article>
+
+        <article class="ar3">
+            <div><a href="./details.html"><span>All Details</span></a></div>
+        </article>
+    </section>
+
+    <table border="">
+        <thead>
+            <th class="h">ID</th>
+            <th>FROM</th>
+            <th class="h">TO</th>
+            <th>DEPARTURE</th>
+            <th class="h">RETURN</th>
+            <th>TRAVELING REASON</th>
+            <th class="h">PAYMENT</th>
+        </thead>
+        <tbody id="displaydata"></tbody>
+    </table>
+    <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url("./sky\ image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400vh;
+    width: 100%;
+    overflow-x: hidden;
+    /* background-color: rgba(120, 174, 195, 0.411); */
+}
+#navbar{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 10px 3px 10px;
+    position: sticky;
+    top: 0px;
+    background-color: #ffffffd5;
+    z-index: 10;
+    overflow-x: hidden;
+}
+#navbar article{
+    display: flex;
+    padding: 10px;
+    /* margin: 30px; */
+}
+#navbar article div a{
+    margin: 30px;
+    text-decoration: none;
+    align-items: center;
+    color: #25304b;
+}
+#navbar article div a i{
+    margin-left: 10px;
+}
+#navbar article img{
+    height: 31px;
+    width: 103px;
+}
+#navbar .ar3 div a i{
+    margin-left: 8px;
+}
+#navbar .ar3 div span{
+    background-color: white;
+    padding: 8px;
+    border-radius: 20px;
+}
+#navbar .ar3 div a{
+    background-color: lightgray;
+    padding: 12px 6px 12px 4px;
+    border-radius: 50px;
+}
+#navbar .ar3{
+    margin-top: 4px;
+}
+#navbar .ar2{
+    margin-top: 4px;
+}
+/* ============================================== form ========================================================== */
+#form{
+    background-color: white;
+    margin-top: 200px;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-bottom: 400px;
+    padding: 50px;
+}
+#form .div1{
+    display: flex;
+    margin-bottom: 30px;
+}
+#form .div1 div{
+    display: flex;
+    margin-right: 30px;
+}
+#form .div1 div input{
+    height: 21px;
+    width: 21px;
+    margin-right: 10px;
+}
+#form .div1 div div{
+    font-size: 17px;
+}
+/* ================================================= */
+
+
+
+/* ====================================================== footer section ===================================================== */
+#footer{
+    background-color: #040273;
+    z-index: 6;
+    margin-top: -170px;
+    overflow-x: hidden;
+}
+#footer article .div1 .heading{
+    display: flex;
+    margin-left: 35px;
+    color: white;
+    justify-content: space-evenly;
+    font-size: 13px;
+}
+#footer article .div1 .heading h1{
+    margin: 15px 100px 20px 30px;
+}
+#footer article .div2{
+    padding-top: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+#footer article .div2 div h1{
+    font-size: 17px;
+    color: white;
+    margin-bottom: 25px;
+    margin-left: -5px;
+}
+#footer article .div2 .line5 img{
+    height: 100px;
+}
+#footer article .div2 div a{
+    text-decoration: none;
+    color: white;
+}
+#footer article .div2 .line1{
+    margin-left: -45px;
+}
+#footer article .div2 .line2{
+    margin-left: -15px;
+}
+#footer article .div2 .line3{
+    margin-left: px;
+}
+#footer article .div2 .line4{
+    margin-left: px;
+}
+#footer article .div2 .line5{
+    margin-right: -50px;
+}
+#footer .ar1 div{
+    margin-bottom: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+#footer .ar2 img{
+    margin-top: 30px;
+    width: 100%;
+    opacity: 0px;
+}

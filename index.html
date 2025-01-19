@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <section id="navbar">
+        <article class="ar1">
+            <div><img src="./indigo.avif" alt=""></div>
+        </article>
+
+        <article class="ar2">
+            <div><a href="#">Book <i class="fa-solid fa-angle-down"></i></a></div>
+            <div><a href="#">Trips <i class="fa-solid fa-angle-down"></i></a></div>
+            <div><a href="#">Check In</a></div>
+            <div><a href="#">6E Rewards</a></div>
+            <div><a href="#">IndiGo BluChip <i class="fa-solid fa-angle-down"></i></a></div>
+        </article>
+
+        <article class="ar3">
+            <div><a href="#"><span>Login</span><i class="fa-solid fa-angle-down"></i></a></div>
+        </article>
+    </section>
+
+    <!-- ================================================= hero section ========================================================== -->
+    <section id="hero">
+        <div class="h1">
+            <h1>Hi there, where would you like to <span>IndiGo</span> today?</h1>
+        </div>
+        <article class="ar1">
+            <div class="div1">
+                <p><i class="fa-solid fa-plane-up"></i> Book a flight</p>
+            </div>
+            <form action="./details2.html" onsubmit="return insert_data()">
+                <div class="div2">
+                    <div>
+                        <input type="radio" name="flightType" value="oneWay" class="oneWay">
+                        <div>One way</div>
+                    </div>
+                    <div>
+                        <input type="radio" name="flightType" value="roundTrip" class="roundTrip" onclick="roundtrip()">
+                        <div>Round trip</div>
+                    </div>
+                </div>
+                <!-- ========================================================== -->
+                <div class="div3">
+                    <div class="d1">
+                        <label>
+                            From <br>
+                            <input type="text" placeholder="Start flying" id="from" onblur="s('from')">
+                        </label>
+                    </div>
+
+                    <div class="d2">
+                        <label>
+                            To <br>
+                            <input type="text" placeholder="Going to?" id="to" onblur="s('to')">
+                        </label>
+                    </div>
+                    <!-- =========================================================== -->
+                    <div class="d3">
+                        <label>
+                            Departure <br>
+                            <input type="text" placeholder="Select date" onfocus="this.type = 'date'"
+                                onblur="(this.type = 'text')(s('departure'))" id="departure">
+                        </label>
+                    </div>
+
+                    <div class="d4">
+                        <label>
+                            Return <br>
+                            <input type="text" placeholder="Save more" onfocus="this.type = 'date'"
+                                onblur="this.type = 'text'" id="savemore" class="return1">
+                        </label>
+                    </div>
+                </div>
+                <!-- ============================================================ -->
+                <div class="div4">
+                    <label id="label1">
+                        I am travling for
+                        <select name="" id="traveling_as">
+                            <option value="Leisure">Leisure</option>
+                            <option value="Work">Work</option>
+                            <option value="Medical">Medical</option>
+                        </select>
+                    </label>
+
+                    <label id="label2">
+                        Paying with
+                        <select name="" id="payment">
+                            <option value="Cash">Cash</option>
+                            <option value="IndiGo BluChips">IndiGo BluChips</option>
+                        </select>
+                    </label>
+
+                    <input type="submit" value="search" onclick="return error()">
+                </div>
+            </form>
+        </article>
+
+        <article class="ar2">
+            <div class="div1">
+                <div class="div1">One click away</div>
+                <div class="div2">Find flights at lowest fare</div>
+            </div>
+
+            <div class="div2"><a href="#"><i class="fa-solid fa-angles-right"></i></a></div>
+        </article>
+    </section>
+    <!-- ======================================================first section========================================================== -->
+    <div class="div1_first">What's new?</div>
+    <div class="div2_first">
+        <h1>Find <span>exclusive offers</span> and the best deals available for you.</h1>
+    </div>
+    <center>
+        <section id="slider">
+            <section id="inslider">
+                <div><img src="./slider1.avif" alt=""></div>
+                <div><img src="./slider2.avif" alt=""></div>
+                <div><img src="./slider3.avif" alt=""></div>
+            </section>
+        </section>
+    </center>
+    <!-- ========================================================== second section======================================================= -->
+    <section id="second">
+        <article class="ar1">
+            <div class="div1">
+                <div class="h1" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                    <div>Click here to redeem <br>your 6E rewards</div>
+                </div>
+                <div class="h2" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                    <div>Get a full refund <br> with cancellation <br> assistance @ ₹299*</div>
+                </div>
+            </div>
+            <div class="div2" data-aos="fade-right" data-aos-duration="1500">
+                <div class="img"></div>
+            </div>
+        </article>
+
+        <article class="ar2">
+            <div><img src="" alt=""></div>
+        </article>
+    </section>
+    <!-- =========================================================== third section======================================================= -->
+    <section id="third">
+        <article id="ar1">
+            <div class="div1">
+                <div>AYJ</div>
+            </div>
+            <div class="div2">
+                <div>BKK</div>
+            </div>
+            <div class="div3">
+                <div>BLR</div>
+            </div>
+            <div class="div4">
+                <div>DEL</div>
+            </div>
+            <div class="div5">
+                <div>GOI</div>
+            </div>
+            <div class="div6">
+                <div>HYD</div>
+            </div>
+            <div class="div7">
+                <div>IXL</div>
+            </div>
+            <div class="div8">
+                <div>BOM</div>
+            </div>
+            <div class="div9">
+                <div>PNQ</div>
+            </div>
+        </article>
+    </section>
+    <!-- ============================================================ forth section ====================================================== -->
+    <section id="forth">
+        <article id="ar1">
+            <div class="div1">Embark on a journey of inspiration <br> with IndiGo, where <span> discovery meets <br> the
+                    sky.</span></div>
+            <div class="btn"><a href="#">Explore</a></div>
+
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="h">6E Shuffle: IndiGo and <br> Spotify partner to <br> introduce personalised <br>
+                            playlists. Now, wherever <br> you travel, there’s a 6E <br> playlist for that! <br></div>
+                        <div><img src="./first.avif" alt=""></div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="h">Connecting cultures: <br> IndiGo launches pune- <br> Bhopal route</div>
+                        <div><img src="./second.avif" alt=""></div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="h">Gateway to Pristine <br> Beaches: IndiGo Unveils <br> Mauritius as its 35th <br>
+                            International Destination <br></div>
+                        <div><img src="./third.avif" alt=""></div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="h">IndiGo announces daily <br> direct flights from Delhi to <br> the holy city of
+                            Tirupati <br></div>
+                        <div><img src="./forth.avif" alt=""></div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </article>
+
+        <article class="ar2">
+            <video class="video1" src="./video1.mp4" type="video/mp4" autoplay muted loop data-aos="fade-up"
+                data-aos-duration="1500"></video>
+            <video class="video2" src="./video2.mp4" type="video/mp4" autoplay muted loop data-aos="fade-down"
+                data-aos-duration="1500"></video>
+        </article>
+    </section>
+    <!-- ========================================= fifth section ================================================= -->
+    <section id="fifth">
+        <article>
+            <div class="div1">
+                <div>Up to 15% off on select <span> 6E Add-ons </span></div>
+            </div>
+
+            <div class="div2">
+                <div class="one" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="h1">Pre-book 6E Seat and <br> Eat starting at ₹699</div>
+
+                    <div class="div_one">
+                        <div class="h2">Get your preferred seat and snack <br> combo</div>
+                        <div><a href="#"><i class="fa-solid fa-arrow-up"></i></a></div>
+                    </div>
+                </div>
+
+                <div class="two" data-aos="fade-down" data-aos-duration="1000">
+                    <div class="h1">Pre-paid excess <br> baggage starting at <br> $1515</div>
+
+                    <div class="div_two">
+                        <div class="h2">Excess baggage and additional <br> piece</div>
+                        <div><a href="#"><i class="fa-solid fa-arrow-up"></i></a></div>
+                    </div>
+                </div>
+
+                <div class="three" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="h1">Pre book XL seat <br> starting INR 599</div>
+
+                    <div class="div_three">
+                        <div class="h2">Window, aisle or seat with extra <br> legroom</div>
+                        <div><a href="#"><i class="fa-solid fa-arrow-up"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <!-- ================================================ sixth section =================================================== -->
+    <section id="sixth">
+        <article>
+            <div><img src="./footer img.avif" alt=""></div>
+        </article>
+    </section>
+    <!-- ================================================ footer section ================================================== -->
+    <section id="footer">
+        <article>
+            <div class="div2">
+                <div class="line1">
+                    <h1>COMPANY</h1>
+                    <a href="#">
+                        About us <br><br>
+                        IndiGo Green – ESG report <br><br>
+                        6E Embrace - Diversity <br> Equity & Inclusion <br><br>
+                        IndiGoReach - Our CSR <br> initiatives <br><br>
+                        Board of Directors <br><br>
+                        Leadership Team <br><br>
+                        Investor Relations <br><br>
+                        InterGlobe Enterprises <br><br>
+                        RPWD - Equal Opportunity <br> Policy <br><br>
+                        Transgender Persons Policy<br><br>
+                        HIV/AIDS workplace policy<br><br>
+                        Seat/Aircraft information<br><br>
+                    </a>
+                </div>
+
+                <div class="line2">
+                    <h1>SUPPORT</h1>
+                    <a href="#">
+                        Plan B <br><br>
+                        Special/Disability <br> Assistance <br><br>
+                        Medical Assistance <br><br>
+                        Seat Select <br><br>
+                        6E Eats <br><br>
+                        Add-ons & Services <br><br>
+                        Baggage <br><br>
+                        Refund Claim <br><br>
+                        Charter Services <br><br>
+                        Hotels <br><br>
+                        6Eskai <br><br>
+                        Contact Us <br><br>
+                        IndiGo CarGo <br><br>
+                        FAQ's <br><br>
+                    </a>
+                </div>
+
+                <div class="line3">
+                    <h1>QUICK LINKS</h1>
+                    <a href="#">
+                        Tariff Sheet <br><br>
+                        Offers <br><br>
+                        Careers <br><br>
+                        Advertise with us <br><br>
+                        Sitemap <br><br>
+                        Destinations <br><br>
+                        Blogs <br><br>
+                        Terms and Conditions <br><br>
+                        Conditions of carriage <br><br>
+                        Privacy Policy <br><br>
+                        Disclaimer <br><br>
+                        International Travel Tips <br><br>
+                        Web check-in advisory <br><br>
+                        Purchase requirement <br><br>
+                        Download app <br><br>
+                        Flight status <br><br>
+                        Domestic Flights <br><br>
+                        International Flights <br><br>
+                    </a>
+                </div>
+
+                <div class="line4">
+                    <h1>MEDIA</h1>
+                    <a href="#">
+                        Press releases <br><br>
+                        Our awards <br><br>
+                        Testimonials <br><br>
+                        Hello 6E Magazine <br><br>
+                    </a>
+                </div>
+
+                <div class="line5">
+                    <h1>DOWNLOAD APP</h1>
+                    <img src="./QR-CODE.avif" alt=""> <br>
+                    <a href="#">
+                        iOS / Android
+                    </a>
+                </div>
+            </div>
+        </article>
+
+        <article class="ar2">
+            <img src="./screenshot.png" alt="">
+        </article>
+
+        <article class="ar1">
+            <div>
+                <hr>
+            </div>
+        </article>
+    </section>
+    <!--=========================================================================================================  -->
+    <script src="./script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        AOS.init();
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+
+</html>
