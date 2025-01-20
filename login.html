@@ -8,7 +8,215 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./details2.css">
+    <style>
+        * {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    /* background-image: url("./sky\ image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110%;
+    width: 100%; */
+    overflow-x: hidden;
+    background-color: #daf1ff;
+}
+#navbar{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 10px 3px 10px;
+    position: sticky;
+    top: 0px;
+    background-color: #ffffffd5;
+    z-index: 10;
+    overflow-x: hidden;
+}
+#navbar article{
+    display: flex;
+    padding: 10px;
+    /* margin: 30px; */
+}
+#navbar article div a{
+    margin: 30px;
+    text-decoration: none;
+    align-items: center;
+    color: #25304b;
+}
+#navbar article div a i{
+    margin-left: 10px;
+}
+#navbar article img{
+    height: 31px;
+    width: 103px;
+}
+#navbar .ar3 div a i{
+    margin-left: 8px;
+}
+#navbar .ar3 div span{
+    background-color: white;
+    padding: 8px;
+    border-radius: 20px;
+}
+#navbar .ar3 div a{
+    background-color: lightgray;
+    padding: 12px 6px 12px 4px;
+    border-radius: 50px;
+}
+#navbar .ar3{
+    margin-top: 4px;
+}
+#navbar .ar2{
+    margin-top: 4px;
+}
+/* ============================================== form ========================================================== */
+#form{
+    background-color: rgba(255, 255, 255, 0.605);
+    margin-top: 200px;
+    margin-left: 300px;
+    margin-right: 350px;
+    margin-bottom: 200px;
+    padding: 50px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+/* #form .div1{
+    display: flex;
+    margin-bottom: 30px;
+}
+#form .div1 div{
+    display: flex;
+    margin-right: 30px;
+}
+#form .div1 div input{
+    height: 21px;
+    width: 21px;
+    margin-right: 10px;
+}
+#form .div1 div div{
+    font-size: 17px;
+} */
+/* ================================================= */
+#form .div2 div{
+    font-size: 18px;
+} 
+#form .div2 #name{
+    width: 400px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #daf1ff;
+    border-color: black;
+}
+#form .div2 #name::placeholder{
+    padding-left: 10px;
+}
+#form .div2 #lastname{
+    width: 350px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #daf1ff;
+    border-color: black;
+}
+#form .div2 #lastname::placeholder{
+    padding-left: 10px;
+}
+/* ==================================================== */
+#form .div3 #dob{
+    width: 757px;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #daf1ff;
+    border-color: black;
+}
+#form .div3 #dob::placeholder{
+    padding-left: 10px;
+}
+/* ======================================== */
+#form .div5 input{
+    background-color: #daf1ff;
+    color: black;
+    padding: 9px 15px 9px 15px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+/* ======================================== sixth ============================================ */
+#sixth{
+    overflow-x: hidden;
+}
+#sixth article div img{
+    /* margin-top: 80px; */
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 460px;
+    z-index: 8;
+}
+/* ====================================================== footer section ===================================================== */
+#footer{
+    background-color: #040273;
+    z-index: 6;
+    margin-top: -170px;
+    overflow-x: hidden;
+}
+#footer article .div1 .heading{
+    display: flex;
+    margin-left: 35px;
+    color: white;
+    justify-content: space-evenly;
+    font-size: 13px;
+}
+#footer article .div1 .heading h1{
+    margin: 15px 100px 20px 30px;
+}
+#footer article .div2{
+    padding-top: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+#footer article .div2 div h1{
+    font-size: 17px;
+    color: white;
+    margin-bottom: 25px;
+    margin-left: -5px;
+}
+#footer article .div2 .line5 img{
+    height: 100px;
+}
+#footer article .div2 div a{
+    text-decoration: none;
+    color: white;
+}
+#footer article .div2 .line1{
+    margin-left: -45px;
+}
+#footer article .div2 .line2{
+    margin-left: -15px;
+}
+#footer article .div2 .line3{
+    margin-left: px;
+}
+#footer article .div2 .line4{
+    margin-left: px;
+}
+#footer article .div2 .line5{
+    margin-right: -50px;
+}
+#footer .ar1 div{
+    margin-bottom: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+#footer .ar2 img{
+    margin-top: 30px;
+    width: 100%;
+    opacity: 0px;
+}
+    </style>
 </head>
 
 <body>
@@ -31,44 +239,28 @@
     </section>
 
     <section id="form">
-        <form action="details.html" onclick="return insert_data()">
-            <div class="div1">
-                <div id="male">
-                    <input type="radio">
-                    <div>Male</div>
-                </div>
-                <div id="female">
-                    <input type="radio">
-                    <div>Female</div>
-                </div>
-            </div>
-
+        <form action="./index.html" onsubmit="return login()">
             <div class="div2">
-                <label>Name should be as per government ID <br>
-                    <input type="text" placeholder="Enter your first name" id="name">
-                    <input type="text" placeholder="Enter your last name">
-                </label>
+                <div>Name should be as per government ID</div> <br>
+                <input type="text" placeholder="Enter your first name" id="name">
+                <input type="text" placeholder="Enter your last name" id="lastname">
             </div>
 
             <div class="div3">
-                <input type="text" placeholder="Date of birth">
+                <input type="password" placeholder="Enter password" id="dob">
             </div>
-
-            <h1>Contact Details</h1>
-
-            <div class="div4">
-                <label>The flyer must have access to the mobile number submitted below for mandatory travel updates.
-                    <br>
-                    <input type="text" placeholder="Enter your phone number">
-                    <input type="email" placeholder="Enter your email">
-                </label>
-            </div><br>
 
             <div class="div5">
                 <input type="submit">
             </div>
         </form>
     </section>
+        <!-- ================================================ second section =================================================== -->
+        <section id="sixth">
+            <article>
+                <div><img src="./footer img.avif" alt=""></div>
+            </article>
+        </section>
     <!-- ================================================ footer section ================================================== -->
     <section id="footer">
         <article>
@@ -165,7 +357,7 @@
             </div>
         </article>
     </section>
-    <script src="./details2.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>

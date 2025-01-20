@@ -15,16 +15,21 @@
         }
 
         body {
-            background-image: url("./sky\ image.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-            /* height: 500vh; */
-            width: 100%;
             overflow-x: hidden;
+            background-color: #daf1ff;
         }
 
         table {
-            background-color: rgb(221, 215, 215);
+            margin-left: 430px;
+            margin-top: 100px;
+        }
+        table th{
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+        table tr{
+            background-color: white;
         }
 
         #navbar {
@@ -106,16 +111,18 @@
     </section>
 
     <table border="">
-        <thead>
-            <th class="h">ID</th>
-            <th>FROM</th>
-            <th class="h">TO</th>
-            <th>DEPARTURE</th>
-            <th class="h">RETURN</th>
-            <th>TRAVELING REASON</th>
-            <th class="h">PAYMENT</th>
-        </thead>
-        <tbody id="displaydata"></tbody>
+            <thead>
+                <th>ID</th>
+                <th>FROM</th>
+                <th>TO</th>
+                <th>DEPARTURE</th>
+                <th>RETURN</th>
+                <th>TRAVELING REASON</th>
+                <th>PAYMENT</th>
+            </thead>
+            <tbody id="displaydata"></tbody>
+    </table>
+
     </table>
     <script src="./script.js"></script>
 </body>

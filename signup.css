@@ -4,13 +4,13 @@
 }
 
 body {
-    background-image: url("./sky\ image.jpg");
+    /* background-image: url("./sky\ image.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 400vh;
-    width: 100%;
+    height: 110%;
+    width: 100%; */
     overflow-x: hidden;
-    /* background-color: rgba(120, 174, 195, 0.411); */
+    background-color: #daf1ff;
 }
 #navbar{
     display: flex;
@@ -61,14 +61,16 @@ body {
 }
 /* ============================================== form ========================================================== */
 #form{
-    background-color: white;
-    margin-top: 200px;
-    margin-left: 400px;
-    margin-right: 400px;
-    margin-bottom: 400px;
+    background-color: rgba(255, 255, 255, 0.605);
+    margin-top: 100px;
+    margin-left: 300px;
+    margin-right: 350px;
+    margin-bottom: 200px;
     padding: 50px;
+    border-radius: 20px;
+    border: 1px solid black;
 }
-#form .div1{
+/* #form .div1{
     display: flex;
     margin-bottom: 30px;
 }
@@ -83,11 +85,93 @@ body {
 }
 #form .div1 div div{
     font-size: 17px;
-}
+} */
 /* ================================================= */
-
-
-
+#form .div2 div{
+    font-size: 18px;
+} 
+#form .div2 #name{
+    width: 400px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #daf1ff;
+    border-color: black;
+}
+#form .div2 #name::placeholder{
+    padding-left: 10px;
+}
+#form .div2 #lastname{
+    width: 350px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #daf1ff;
+    border-color: black;
+}
+#form .div2 #lastname::placeholder{
+    padding-left: 10px;
+}
+/* ==================================================== */
+#form .div3 #dob{
+    width: 757px;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #daf1ff;
+    border-color: black;
+}
+#form .div3 #dob::placeholder{
+    padding-left: 10px;
+}
+/* ===================================================== */
+#form h1{
+    font-size: 20px;
+    margin-top: 20px;
+}
+/* ===================================================== */
+#form .div4 div{
+    font-size: 17.5px;
+    margin-top: 10px;
+}
+#form .div4 #phone{
+    width: 400px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #daf1ff;
+    border-color: black;
+}
+#form .div4 #phone::placeholder{
+    padding-left: 10px;
+}
+#form .div4 #email{
+    width: 350px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #daf1ff;
+    border-color: black;
+}
+#form .div4 #email::placeholder{
+    padding-left: 10px;
+}
+/* ======================================== */
+#form .div5 input{
+    background-color: #daf1ff;
+    color: black;
+    padding: 9px 15px 9px 15px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+/* ======================================== sixth ============================================ */
+#sixth{
+    overflow-x: hidden;
+}
+#sixth article div img{
+    /* margin-top: 80px; */
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 460px;
+    z-index: 8;
+}
 /* ====================================================== footer section ===================================================== */
 #footer{
     background-color: #040273;

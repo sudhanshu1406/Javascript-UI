@@ -4,11 +4,12 @@
 }
 
 body{
-    background-image: url("./sky\ image.jpg");
+    /* background-image: url("./sky\ image.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+    width: 100%; */
     overflow-x: hidden;
+    background-color: #daf1ff;
 }
 
 #navbar{
